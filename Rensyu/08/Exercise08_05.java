@@ -1,3 +1,4 @@
+// å­¦ç±ç•ªå·:19H081ï¼Œæ°å:ä¹…äº•é¢¯ç”Ÿï¼ŒExerciseç•ªå·:ç·´ç¿’5
 class MyPoint
 {
    int x;
@@ -21,7 +22,7 @@ class MyPoint
    }
 }
 
-class SampleP5
+class Exercise08_05
 {
    public static void main(String[] args)
    {
@@ -33,6 +34,6 @@ class SampleP5
       int px = p1.getX();
       int py = p1.getY();
       
-      System.out.println("XÀ•W‚Í" + px + "YÀ•W‚Í" + py + "‚Å‚µ‚½B");
+      System.out.println("Xåº§æ¨™ã¯" + px + "Yåº§æ¨™ã¯" + py + "ã§ã—ãŸã€‚");
    }
 }
