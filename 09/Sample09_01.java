@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+// å­¦ç±ç•ªå·:19H081ï¼Œæ°å:ä¹…äº•é¢¯ç”Ÿï¼ŒSampleç•ªå·:1
 class Car
 {
    int num;
@@ -6,12 +6,12 @@ class Car
 
    void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
 }
 
-class Sample1
+class Sample09_01
 {
    public static void main(String[] args)
    {
