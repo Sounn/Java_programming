@@ -1,4 +1,4 @@
-//車クラス
+// 学籍番号:19H081，氏名:久井颯生，Sample番号:6
 class Car
 {
    int num;
@@ -30,7 +30,7 @@ class Car
    }
 }
 
-class Sample6
+class Sample08_06
 {
    public static void main(String[] args)
    {
