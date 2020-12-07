@@ -1,3 +1,4 @@
+// 学籍番号:19H081，氏名:久井颯生，課題番号:課題1
 class Score
 {
   private int s1;

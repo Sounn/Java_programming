@@ -1,3 +1,4 @@
+// 学籍番号:19H081，氏名:久井颯生，課題番号:課題3
 //課題３．（１０点）
 //課題３のサンプルプログラム
 
@@ -42,7 +43,7 @@ class Figure
 			//不足箇所を追加しなさい
 }
 
-class Kadai09_3_sample
+class Kadai09_3
 {
 	public static void main(String[] args)
 	{
