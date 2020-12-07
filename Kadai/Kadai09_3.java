@@ -6,6 +6,8 @@ class Figure
 {
 	private double width;			//横
 	private double height;			//縦
+	private double depth;	//奥行
+	private double volume;	//体積
 			//不足箇所を追加しなさい
 	private double square;			//面積
 			//不足箇所を追加しなさい
@@ -32,15 +34,27 @@ class Figure
 			return 1;
 		}
 	}
+	public int setLength(int w, int h, int d)
+	{
+		if( this.setLength(w,h) == 0  && d >= 0 ){
+			depth = (double)d;
+			return 0;
+		}
+		else{
+			if( d < 0) System.out.printf("*** 奥行 " +d+ " が不適切なので設定できませんでした。 ***");
+			return 1;
+		}
+	}
 
-			//不足箇所を追加しなさい
+	public double getVolume(){	//体積の計算
+		volume = getArea() * depth;
+		return volume;
+	}
 
 	public double getArea() {			//面積を計算
 		square = width * height;
 		return square;
 	}
-
-			//不足箇所を追加しなさい
 }
 
 class Kadai09_3
@@ -51,14 +65,16 @@ class Kadai09_3
 		int i;
 		int w[] = { -10,  10,  10,  10};
 		int h[] = {  20, -20,  20,  20};
-			//不足箇所を追加しなさい
+		int d[] = { 30, 30, -30, 30};
 
 		for ( i = 0 ; i <w.length ; i++ ) {
 			System.out.printf("\n %2dつ目の図形の面積を求めます。\n", i+1);
 			if(fig.setLength(w[i], h[i]) == 0)
 				System.out.printf("面積は%.2fです。",fig.getArea());
 
-			//不足箇所を追加しなさい
+			System.out.printf("\n %2dつ目の図形の体積を求めます。\n", i+1);
+			if(fig.setLength(w[i], h[i], d[i]) == 0)
+				System.out.printf("体積は%.2fです。",fig.getVolume());
 			System.out.printf("\n");
 		}
 	}
