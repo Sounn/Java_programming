@@ -8,8 +8,9 @@ class Kakeibo
 	private int day;		//日
 	private int income;		//収入
 	private int expenses;	//支出
+	private static int savings = 0;
 	
-	public Kakeibo()		//クラスの外からアクセスできないようにしなさい。
+	private Kakeibo()		//クラスの外からアクセスできないようにしなさい。
 	{
 		year = 0;
 		month = 0;
@@ -17,9 +18,28 @@ class Kakeibo
 		income = 0;
 		expenses = 0;
 	}
+
 	public void showData()
 	{
 		System.out.printf("  %4d 年  %2d 月  %2d 日  :  収入 %7d 円  支出 %7d 円\n", year, month, day, income, expenses);
+	}
+
+	public Kakeibo(int y,int m,int d,int inco,int expe){
+		this();
+		if(inco < 0 || expe < 0){
+			System.out.println("***** エラー:入力した金額は無効です。");
+		}else{
+			year = y;
+			month = m;
+			day = d;
+			income = inco;
+			expenses = expe;
+			savings += (income - expenses);
+		}
+	}
+
+	 public static void showSavings(){
+		System.out.printf("貯金: %8d円",savings);
 	}
 }
 
@@ -28,10 +48,9 @@ class Kadai10_3
 	public static void main(String args[])
 	{
 		System.out.printf("\n");
-		Kakeibo kakeibo1 = new Kakeibo();		//この行をコメントにしなさい
-		kakeibo1.showData();					//この行をコメントにしなさい
+		// Kakeibo kakeibo1 = new Kakeibo();		//この行をコメントにしなさい
+		// kakeibo1.showData();					//この行をコメントにしなさい
 		
-/*			//この行を削除して以下のコードを動作するようにしなさい。
 		Kakeibo.showSavings();
 		System.out.printf("\n");
 						
@@ -52,7 +71,7 @@ class Kadai10_3
 		
 		System.out.printf("\n");
 		Kakeibo.showSavings();
-*/			//この行を削除しなさい。
+
 		System.out.printf("\n");
 	}
 }
