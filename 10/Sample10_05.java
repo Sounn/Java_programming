@@ -1,6 +1,7 @@
+// 学籍番号:19H081，氏名:久井颯生，Sample番号:5
 import java.io.*;
 
-class Sample5
+class Sample10_05
 {
    public static void main(String[] args) throws IOException
    {
