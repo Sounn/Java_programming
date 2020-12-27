@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+// å­¦ç±ç•ªå·:19H081ï¼Œæ°å:ä¹…äº•é¢¯ç”Ÿï¼ŒExerciseç•ªå·:ç·´ç¿’4
 class Car
 {
    protected int num;
@@ -8,28 +8,28 @@ class Car
    {
       num = 0;
       gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void setCar(int n, double g)
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
    }
    public String toString()
    {
-      String str = "ƒiƒ“ƒo[:" + num + "ƒKƒ\ƒŠƒ“—Ê:" + gas;
+      String str = "ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas + "ã®è»Š";
       return str;
    }
 }
 
-class Sample7
+class Exercise11_04
 {
    public static void main(String[] args)
    {
       Car car1 = new Car();
       car1.setCar(1234, 20.5);
 
-      System.out.println(car1); 
+      System.out.println(car1 + "ã§ã™ã€‚"); 
    }
 }
