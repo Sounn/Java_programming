@@ -53,14 +53,14 @@ class Kadai12_3{
       member[i].printInfo();
     }
 
-    System.out.println("身長が高いのは");
+    System.out.println("\n身長が高いのは");
     if(member[0].compData(member[2],1)){
         member[0].printInfo();
     }else{
         member[2].printInfo();
     }
 
-    System.out.println("体重が低い順に並び替え");
+    System.out.println("\n体重が低い順に並び替え");
     for(int i = 0; i < member.length-1; i++ ){
       for(int j = 1; j < member.length; j++ ){
         if(member[i].compData(member[j],2)){
