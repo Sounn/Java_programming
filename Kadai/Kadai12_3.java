@@ -62,7 +62,7 @@ class Kadai12_3{
 
     System.out.println("\n体重が低い順に並び替え");
     for(int i = 0; i < member.length-1; i++ ){
-      for(int j = 1; j < member.length; j++ ){
+      for(int j = i + 1; j < member.length; j++ ){
         if(member[i].compData(member[j],2)){
           Human h = member[i];
           member[i] = member[j];
