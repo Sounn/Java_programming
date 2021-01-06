@@ -53,7 +53,7 @@ class Kadai12_2{
       member[i].printInfo();
     }
 
-    System.out.println("身長が高いのは");
+    System.out.println("\n身長が高いのは");
     if(member[0].compData(member[2],1)){
         member[0].printInfo();
     }else{
