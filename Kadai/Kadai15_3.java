@@ -4,7 +4,7 @@ class Kadai15_3
   public static void main(String[] args)
   {
     int num_max = 10;
-    int[] count = new int[10];
+    int[] count = new int[num_max];
 
     int c = 0;
     while(c<100){

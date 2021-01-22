@@ -21,13 +21,13 @@ class Kadai15_1
 
     // }
 
-    for(int i = 0; i <= 31;i++){
+    for(int i = -4; i <= 31;i++){
       int day = i;
 
       if(i % 7 == 2)System.out.println(day);
-      else if(i <= 0)System.out.print("\t\t\t\t\t");
+      else if(i <= 0)System.out.print("\t");
       else System.out.print(day + "\t");
     }
-    System.out.println("\t\t\t\t\t");
+    System.out.println("\t");
   }
 }
